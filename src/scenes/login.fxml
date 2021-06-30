@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.loginController">
+	<children>
+		<ImageView fitHeight="458.0" fitWidth="687.0" layoutX="-68.0" layoutY="-19.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../../../Desktop/money-finance-bank-cash.jpg" />
+			</image>
+		</ImageView>
+		<Text fill="WHITE" layoutX="207.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Se connecter" wrappingWidth="169.80419921875">
+			<font>
+				<Font name="Cambria" size="30.0" />
+			</font>
+		</Text>
+		<TextField fx:id="user" layoutX="165.0" layoutY="126.0" prefHeight="35.0" prefWidth="254.0" />
+		<PasswordField fx:id="pwd" layoutX="165.0" layoutY="193.0" prefHeight="35.0" prefWidth="254.0" />
+		<Button fx:id="connectBtn" layoutX="248.0" layoutY="260.0" mnemonicParsing="false" onAction="#connect" text="Connecter" textFill="WHITE" />
+      <Text fx:id="alert" fill="RED" layoutX="175.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="233.0" AnchorPane.leftAnchor="175.0" AnchorPane.rightAnchor="192.0" />
+	</children>
+</AnchorPane>

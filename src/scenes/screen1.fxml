@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="739.0"
+	prefWidth="807.0" styleClass="container"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="controller.compteController">
+	<children>
+		<VBox prefHeight="51.0" prefWidth="252.0"
+			GridPane.columnIndex="1" GridPane.rowIndex="2">
+			<children>
+				<Button mnemonicParsing="false" onAction="#best"
+					prefHeight="31.0" prefWidth="224.0" text="Meilleure Compte" />
+			</children>
+		</VBox>
+		<TitledPane animated="false" blendMode="SRC_ATOP"
+			collapsible="false" contentDisplay="TOP" expanded="false"
+			graphicTextGap="0.0" prefHeight="35.0" prefWidth="677.0"
+			text="Gestion des comptes bancaires" textAlignment="CENTER"
+			GridPane.columnSpan="3">
+			<font>
+				<Font name="Serif Regular" size="19.0" />
+			</font>
+			<opaqueInsets>
+				<Insets />
+			</opaqueInsets>
+			<GridPane.margin>
+				<Insets bottom="120.0" />
+			</GridPane.margin>
+		</TitledPane>
+		<Button mnemonicParsing="false" onAction="#changeScreenAccueil"
+			text=" Acceuil">
+			<graphic>
+				<ImageView fitHeight="30.0" fitWidth="24.0"
+					pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image
+							url="@../../../../Desktop/assets/17-178841_home-png-home-icon-free.png" />
+					</image>
+				</ImageView>
+			</graphic>
+		</Button>
+		<HBox prefHeight="51.0" prefWidth="174.0" GridPane.rowIndex="2">
+			<children>
+				<Button mnemonicParsing="false" onAction="#retrait"
+					text="Débiter">
+					<HBox.margin>
+						<Insets left="10.0" right="10.0" />
+					</HBox.margin>
+
+				</Button>
+				<Button mnemonicParsing="false" onAction="#ajouter"
+					text="Créditer" />
+			</children>
+		</HBox>
+		<TableView fx:id="compteTable" prefHeight="480.0"
+			prefWidth="525.0" GridPane.columnSpan="3" GridPane.rowIndex="3">
+			<columns>
+				<TableColumn fx:id="idCol" minWidth="0.0"
+					prefWidth="56.0" style="-: ;" text="ID" />
+				<TableColumn fx:id="testCol" prefWidth="184.0"
+					text="Proprietarie" />
+				<TableColumn fx:id="soldeCol" minWidth="0.0"
+					prefWidth="106.0" text="Solde" />
+				<TableColumn fx:id="decouvert" minWidth="0.0"
+					prefWidth="124.0" text="Découvert" />
+				<TableColumn fx:id="decouvertMax" minWidth="0.0"
+					prefWidth="170.0" text="Découvert Maximale" />
+				<TableColumn fx:id="soldeMax" minWidth="0.0"
+					prefWidth="128.0" text="Solde Maximum" />
+			</columns>
+		</TableView>
+		<HBox fx:id="hbtn" prefHeight="100.0" prefWidth="200.0"
+			GridPane.columnSpan="2" GridPane.rowIndex="4">
+			<children>
+				<Button fx:id="addBtn" mnemonicParsing="false"
+					onAction="#add" prefHeight="37.0" prefWidth="107.0"
+					style="-fx-background-color: white; -fx-border-color: black;"
+					text="Ajouter">
+					<HBox.margin>
+						<Insets left="10.0" right="10.0" top="7.0" />
+					</HBox.margin>
+					<graphic>
+						<ImageView fitHeight="45.0" fitWidth="21.0"
+							pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image
+									url="@../../../../Desktop/assets/PngItem_1121197.png" />
+							</image>
+						</ImageView>
+					</graphic>
+				</Button>
+
+				<Button mnemonicParsing="false" onAction="#delete"
+					prefHeight="37.0" prefWidth="122.0"
+					style="-fx-background-color: white; -fx-border-color: black;"
+					text="Supprimer">
+					<HBox.margin>
+						<Insets top="7.0" />
+					</HBox.margin>
+					<graphic>
+						<ImageView fitHeight="23.0" fitWidth="27.0"
+							pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image
+									url="@../../../../Desktop/assets/Icons8_flat_delete_generic.svg%20(1).png" />
+							</image>
+						</ImageView>
+					</graphic>
+				</Button>
+				<Button mnemonicParsing="false" onAction="#edit"
+					prefHeight="37.0" prefWidth="111.0"
+					style="-fx-background-color: white; -fx-border-color: black;"
+					text="Modifer">
+					<HBox.margin>
+						<Insets left="10.0" top="7.0" />
+					</HBox.margin>
+					<graphic>
+						<ImageView fitHeight="23.0" fitWidth="27.0"
+							pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image
+									url="@../../../../Desktop/assets/SeekPng.com_edit-icon-png_2022672.png" />
+							</image>
+						</ImageView>
+					</graphic>
+				</Button>
+			</children>
+		</HBox>
+		<HBox prefHeight="100.0" prefWidth="200.0"
+			GridPane.columnIndex="2" GridPane.rowIndex="4">
+			<children>
+				<Button mnemonicParsing="false" onAction="#exit"
+					prefHeight="40.0" prefWidth="75.0"
+					style="-fx-background-color: red;" text="Quitter" textFill="WHITE">
+					<HBox.margin>
+						<Insets left="180.0" top="7.0" />
+					</HBox.margin>
+				</Button>
+			</children>
+		</HBox>
+		<HBox prefHeight="100.0" prefWidth="200.0"
+			GridPane.columnIndex="2" GridPane.rowIndex="2">
+			<children>
+				<HBox prefHeight="51.0" prefWidth="278.0">
+					<children>
+						<Button mnemonicParsing="false" onAction="#decouvert"
+							text="Découvert">
+							<HBox.margin>
+								<Insets left="80.0" right="20.0" />
+							</HBox.margin>
+						</Button>
+						<Button mnemonicParsing="false" onAction="#virement"
+							text="Virement" />
+					</children>
+				</HBox>
+			</children>
+		</HBox>
+		<HBox fx:id="searchContainer" prefHeight="100.0"
+			prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+			<children>
+				<ImageView fitHeight="36.0" fitWidth="31.0"
+					pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image
+							url="@../../../../Desktop/assets/search-icon-transparent-png-423.png" />
+					</image>
+					<HBox.margin>
+						<Insets left="80.0" right="10.0" />
+					</HBox.margin>
+				</ImageView>
+				<TextField fx:id="search" prefHeight="31.0"
+					prefWidth="147.0" />
+			</children>
+		</HBox>
+	</children>
+	<columnConstraints>
+		<ColumnConstraints hgrow="SOMETIMES"
+			maxWidth="331.0" minWidth="10.0" prefWidth="307.0" />
+		<ColumnConstraints hgrow="SOMETIMES"
+			maxWidth="394.0" minWidth="10.0" prefWidth="249.0" />
+		<ColumnConstraints hgrow="SOMETIMES"
+			maxWidth="394.0" minWidth="10.0" prefWidth="307.0" />
+	</columnConstraints>
+	<rowConstraints>
+		<RowConstraints maxHeight="396.0" minHeight="0.0"
+			prefHeight="153.0" vgrow="SOMETIMES" />
+		<RowConstraints maxHeight="467.0" minHeight="10.0"
+			prefHeight="55.0" vgrow="SOMETIMES" />
+		<RowConstraints maxHeight="467.0" minHeight="10.0"
+			prefHeight="55.0" vgrow="SOMETIMES" />
+		<RowConstraints maxHeight="646.0" minHeight="10.0"
+			prefHeight="440.0" vgrow="SOMETIMES" />
+		<RowConstraints maxHeight="584.0" minHeight="10.0"
+			prefHeight="59.0" vgrow="SOMETIMES" />
+	</rowConstraints>
+</GridPane>

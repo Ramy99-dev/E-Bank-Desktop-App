@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="343.0" prefWidth="407.0" styleClass="container" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.modifClientController">
+	<columnConstraints>
+		<ColumnConstraints hgrow="SOMETIMES" maxWidth="199.0" minWidth="10.0" prefWidth="127.0" />
+		<ColumnConstraints hgrow="SOMETIMES" maxWidth="280.0" minWidth="10.0" prefWidth="280.0" />
+	</columnConstraints>
+	<rowConstraints>
+		<RowConstraints maxHeight="98.0" minHeight="10.0" prefHeight="88.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="64.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+		<RowConstraints maxHeight="116.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="116.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+		<RowConstraints maxHeight="119.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="119.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+		<RowConstraints maxHeight="104.0" minHeight="10.0" prefHeight="104.0" vgrow="SOMETIMES" />
+	</rowConstraints>
+	<children>
+		<TitledPane animated="false" blendMode="SRC_ATOP" collapsible="false" contentDisplay="TOP" expanded="false" graphicTextGap="0.0" prefHeight="35.0" prefWidth="548.0" text="Modifier Client" textAlignment="CENTER" GridPane.columnSpan="2">
+			<font>
+				<Font name="Serif Regular" size="19.0" />
+			</font>
+			<opaqueInsets>
+				<Insets />
+			</opaqueInsets>
+			<GridPane.margin>
+				<Insets bottom="60.0" />
+			</GridPane.margin>
+		</TitledPane>
+		<Label text="Nom">
+			<GridPane.margin>
+				<Insets left="20.0" top="40.0" />
+			</GridPane.margin>
+		</Label>
+		<Label text="Prénom" GridPane.rowIndex="2">
+			<GridPane.margin>
+				<Insets left="20.0" />
+			</GridPane.margin>
+		</Label>
+		<Label text="Adresse" GridPane.rowIndex="4">
+			<GridPane.margin>
+				<Insets left="20.0" />
+			</GridPane.margin>
+		</Label>
+		<Button mnemonicParsing="false" onAction="#cancel" style="-fx-background-color: red;" text="Annuler" textFill="WHITE" GridPane.rowIndex="6">
+			<GridPane.margin>
+				<Insets left="40.0" />
+			</GridPane.margin>
+		</Button>
+		<Button mnemonicParsing="false" onAction="#edit" style="-fx-background-color: green;" text="Modifer" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="6">
+			<GridPane.margin>
+				<Insets left="80.0" />
+			</GridPane.margin>
+		</Button>
+		<TextField fx:id="nom" GridPane.columnIndex="1">
+			<GridPane.margin>
+				<Insets right="10.0" top="40.0" />
+			</GridPane.margin>
+		</TextField>
+		<TextField fx:id="prenom" prefHeight="31.0" prefWidth="149.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+			<GridPane.margin>
+				<Insets right="10.0" />
+			</GridPane.margin>
+		</TextField>
+		<TextField fx:id="email" prefHeight="31.0" prefWidth="128.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+			<GridPane.margin>
+				<Insets right="10.0" />
+			</GridPane.margin>
+		</TextField>
+      <Text fx:id="alertNom" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Text>
+      <Text fx:id="prenomAlert" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Text>
+      <Text fx:id="adresseAlert" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+	</children>
+</GridPane>

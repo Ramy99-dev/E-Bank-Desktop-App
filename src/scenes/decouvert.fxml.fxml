@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="730.0" prefWidth="641.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.decouvertController">
+	<children>
+		<ListView fx:id="decouvertList" layoutX="14.0" layoutY="83.0" prefHeight="597.0" prefWidth="617.0" />
+		<Button layoutX="287.0" layoutY="685.0" mnemonicParsing="false" onAction="#exit" text="Quitter" />
+      <Text layoutX="242.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Compte a Découvert">
+         <font>
+            <Font name="Century Gothic" size="18.0" />
+         </font>
+      </Text>
+	</children>
+</AnchorPane>

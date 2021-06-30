@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="739.0" prefWidth="641.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.choixClientController">
+   <children>
+      <Button layoutX="59.0" layoutY="282.0" mnemonicParsing="false" onAction="#allClient" prefHeight="162.0" prefWidth="170.0">
+         <graphic>
+            <ImageView fitHeight="134.0" fitWidth="164.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/assets/61634-vector-businessman-client-design-icon-free-frame.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ImageView fitHeight="110.0" fitWidth="56.0" layoutX="483.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/assets/1cl.png" />
+         </image>
+      </ImageView>
+      <ChoiceBox fx:id="clients" layoutX="425.0" layoutY="417.0" prefHeight="31.0" prefWidth="170.0" />
+      <Text layoutX="91.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tous les client" />
+      <Text layoutX="314.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ou" />
+      <Text layoutX="464.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choisir un client" />
+      <TitledPane animated="false" blendMode="SRC_ATOP" collapsible="false" contentDisplay="TOP" expanded="false" graphicTextGap="0.0" prefHeight="35.0" prefWidth="641.0" text="Choisir Client" textAlignment="CENTER">
+         <font>
+            <Font name="Serif Regular" size="19.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TitledPane>
+      <Button layoutX="438.0" layoutY="594.0" mnemonicParsing="false" onAction="#choose" prefHeight="31.0" prefWidth="72.0" style="-fx-background-color: green;" text="Choisir" textFill="WHITE" />
+      <Button layoutX="125.0" layoutY="594.0" mnemonicParsing="false" onAction="#cancel" style="-fx-background-color: red;" text="Annuler" textFill="WHITE" />
+   </children>
+</AnchorPane>

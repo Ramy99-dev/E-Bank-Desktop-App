@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.virementClientController">
+	<children>
+		<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="310.0" prefWidth="407.0" styleClass="container">
+			<children>
+				<TitledPane animated="false" blendMode="SRC_ATOP" collapsible="false" contentDisplay="TOP" expanded="false" graphicTextGap="0.0" prefHeight="15.0" prefWidth="389.0" text="Virement" textAlignment="CENTER" GridPane.columnSpan="2">
+					<font>
+						<Font name="Serif Regular" size="19.0" />
+					</font>
+					<opaqueInsets>
+						<Insets />
+					</opaqueInsets>
+					<GridPane.margin>
+						<Insets bottom="60.0" />
+					</GridPane.margin>
+				</TitledPane>
+				<Button mnemonicParsing="false" onAction="#cancel" style="-fx-background-color: red;" text="Annuler" textFill="WHITE" GridPane.rowIndex="4">
+					<GridPane.margin>
+						<Insets left="40.0" />
+					</GridPane.margin>
+				</Button>
+				<Button mnemonicParsing="false" onAction="#send" style="-fx-background-color: green;" text="Confirmer" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4">
+					<GridPane.margin>
+						<Insets left="120.0" />
+					</GridPane.margin>
+				</Button>
+				<Text strokeType="OUTSIDE" strokeWidth="0.0" text="De :" wrappingWidth="32.36181640625" GridPane.rowIndex="1">
+					<GridPane.margin>
+						<Insets left="30.0" />
+					</GridPane.margin>
+				</Text>
+				<Text strokeType="OUTSIDE" strokeWidth="0.0" text="A :" GridPane.rowIndex="3">
+					<GridPane.margin>
+						<Insets left="30.0" />
+					</GridPane.margin>
+				</Text>
+				<ChoiceBox fx:id="senderAcc" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+				<ChoiceBox fx:id="receiverAcc" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+				<TextField fx:id="amount" GridPane.columnSpan="2" GridPane.rowIndex="2">
+					<GridPane.margin>
+						<Insets left="126.0" right="128.0" />
+					</GridPane.margin>
+				</TextField>
+			</children>
+			<columnConstraints>
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="199.0" minWidth="10.0" prefWidth="127.0" />
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="280.0" minWidth="10.0" prefWidth="280.0" />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints maxHeight="136.0" minHeight="10.0" prefHeight="96.0" vgrow="SOMETIMES" />
+				<RowConstraints maxHeight="183.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+				<RowConstraints maxHeight="183.0" minHeight="10.0" prefHeight="64.0" vgrow="SOMETIMES" />
+				<RowConstraints maxHeight="183.0" minHeight="10.0" prefHeight="73.0" vgrow="SOMETIMES" />
+				<RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+			</rowConstraints>
+		</GridPane>
+	</children>
+	<columnConstraints>
+		<ColumnConstraints />
+	</columnConstraints>
+	<rowConstraints>
+		<RowConstraints />
+	</rowConstraints>
+</GridPane>

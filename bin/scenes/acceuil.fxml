@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="739.0" prefWidth="641.0" styleClass="container" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.acceuilController">
+	<columnConstraints>
+		<ColumnConstraints hgrow="SOMETIMES" maxWidth="331.0" minWidth="10.0" prefWidth="307.0" />
+		<ColumnConstraints hgrow="SOMETIMES" maxWidth="394.0" minWidth="10.0" prefWidth="334.0" />
+	</columnConstraints>
+	<rowConstraints>
+		<RowConstraints maxHeight="157.0" minHeight="0.0" prefHeight="124.0" vgrow="SOMETIMES" />
+		<RowConstraints maxHeight="310.0" minHeight="10.0" prefHeight="186.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+	</rowConstraints>
+	<children>
+		<VBox prefHeight="232.0" prefWidth="294.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+			<children>
+				<Button fx:id="btnClient" mnemonicParsing="false" onAction="#changeScreenClents" prefHeight="45.0" prefWidth="220.0" text="Gestion des Clients" textFill="WHITE">
+					<opaqueInsets>
+						<Insets />
+					</opaqueInsets>
+					<VBox.margin>
+						<Insets top="80.0" />
+					</VBox.margin>
+				</Button>
+				<Button fx:id="btnCompte" mnemonicParsing="false" onAction="#changeScreenComptes" prefHeight="45.0" prefWidth="220.0" text="Gestion des Comptes" textFill="WHITE">
+					<opaqueInsets>
+						<Insets left="20.0" />
+					</opaqueInsets>
+					<VBox.margin>
+						<Insets top="43.0" />
+					</VBox.margin>
+				</Button>
+			</children>
+		</VBox>
+		<TitledPane fx:id="header" animated="false" blendMode="SRC_ATOP" collapsible="false" contentDisplay="TOP" expanded="false" graphicTextGap="0.0" prefHeight="154.0" prefWidth="627.0" text="E-BANK" textAlignment="CENTER" GridPane.columnSpan="2">
+			<opaqueInsets>
+				<Insets />
+			</opaqueInsets>
+			<GridPane.margin>
+				<Insets />
+			</GridPane.margin>
+			<font>
+				<Font name="Serif Regular" size="19.0" />
+			</font>
+		</TitledPane>
+		<ImageView fitHeight="192.0" fitWidth="279.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+			<image>
+				<Image url="@../../../../Downloads/pngegg%20(1).png" />
+			</image>
+			<GridPane.margin>
+				<Insets bottom="40.0" />
+			</GridPane.margin>
+		</ImageView>
+      <Button fx:id="deconnectBtn" mnemonicParsing="false" onAction="#deconnect" prefHeight="45.0" prefWidth="157.0" text="Déconnecter" textFill="WHITE" GridPane.columnSpan="2">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="500.0" />
+         </GridPane.margin>
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/assets/logout-2477642-2061904.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+	</children>
+</GridPane>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="739.0" prefWidth="641.0" styleClass="container" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.formClientController">
+	<children>
+		<TitledPane animated="false" blendMode="SRC_ATOP" collapsible="false" contentDisplay="TOP" expanded="false" graphicTextGap="0.0" prefHeight="35.0" prefWidth="677.0" text="Ajouter un client" textAlignment="CENTER" GridPane.columnSpan="3">
+			<font>
+				<Font name="Serif Regular" size="19.0" />
+			</font>
+			<opaqueInsets>
+				<Insets />
+			</opaqueInsets>
+			<GridPane.margin>
+				<Insets bottom="250.0" />
+			</GridPane.margin>
+		</TitledPane>
+		<Button mnemonicParsing="false" onAction="#changeScreenClient" text=" Gestion des clients">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/assets/15514693011556279653-512.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+		<VBox prefHeight="413.0" prefWidth="641.0" GridPane.columnSpan="3" GridPane.rowIndex="1" GridPane.rowSpan="2147483647">
+			<children>
+				<HBox prefHeight="40.0" prefWidth="641.0">
+					<children>
+						<Label text="Nom">
+							<HBox.margin>
+								<Insets left="40.0" />
+							</HBox.margin>
+						</Label>
+						<TextField fx:id="nom">
+							<HBox.margin>
+								<Insets left="200.0" />
+							</HBox.margin>
+						</TextField>
+						<ImageView fx:id="alertNom" fitHeight="31.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../../../../Downloads/kisspng-error-computer-icons-orange-error-icon-5ab143d32d13a6.8028756115215666751846.png" />
+							</image>
+							<HBox.margin>
+								<Insets bottom="4.0" left="10.0" />
+							</HBox.margin>
+						</ImageView>
+					</children>
+					<VBox.margin>
+						<Insets top="10.0" />
+					</VBox.margin>
+				</HBox>
+				<Text fx:id="nomAlertText" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0">
+					<VBox.margin>
+						<Insets left="240.0" />
+					</VBox.margin>
+				</Text>
+				<HBox prefHeight="40.0" prefWidth="641.0">
+					<children>
+						<Label text="Prénom">
+							<HBox.margin>
+								<Insets left="40.0" />
+							</HBox.margin>
+						</Label>
+						<TextField fx:id="prenom">
+							<HBox.margin>
+								<Insets left="180.0" />
+							</HBox.margin>
+						</TextField>
+						<ImageView fx:id="alertPrenom" fitHeight="31.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../../../../Downloads/kisspng-error-computer-icons-orange-error-icon-5ab143d32d13a6.8028756115215666751846.png" />
+							</image>
+							<HBox.margin>
+								<Insets bottom="4.0" left="10.0" />
+							</HBox.margin>
+						</ImageView>
+					</children>
+					<VBox.margin>
+						<Insets top="30.0" />
+					</VBox.margin>
+				</HBox>
+				<Text fx:id="prenomAlertText" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0">
+					<VBox.margin>
+						<Insets left="240.0" />
+					</VBox.margin>
+				</Text>
+				<HBox prefHeight="40.0" prefWidth="641.0">
+					<children>
+						<Label text="Adresse">
+							<HBox.margin>
+								<Insets left="40.0" />
+							</HBox.margin>
+						</Label>
+						<TextField fx:id="adresse">
+							<HBox.margin>
+								<Insets left="180.0" />
+							</HBox.margin>
+						</TextField>
+						<ImageView fx:id="alertAdresse" fitHeight="31.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../../../../Downloads/kisspng-error-computer-icons-orange-error-icon-5ab143d32d13a6.8028756115215666751846.png" />
+							</image>
+							<HBox.margin>
+								<Insets bottom="4.0" left="10.0" />
+							</HBox.margin>
+						</ImageView>
+					</children>
+					<VBox.margin>
+						<Insets top="30.0" />
+					</VBox.margin>
+				</HBox>
+				<Text fx:id="adresseAlertText" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0">
+					<VBox.margin>
+						<Insets left="240.0" />
+					</VBox.margin>
+				</Text>
+				<Button fx:id="addBtn" mnemonicParsing="false" onAction="#add" style="-fx-background-color: green;" text="Ajouter" textFill="WHITE">
+					<VBox.margin>
+						<Insets left="300.0" top="20.0" />
+					</VBox.margin>
+				</Button>
+			</children>
+		</VBox>
+	</children>
+	<columnConstraints>
+		<ColumnConstraints hgrow="SOMETIMES" maxWidth="331.0" minWidth="10.0" prefWidth="307.0" />
+		<ColumnConstraints hgrow="SOMETIMES" maxWidth="394.0" minWidth="10.0" prefWidth="334.0" />
+		<ColumnConstraints />
+	</columnConstraints>
+	<rowConstraints>
+		<RowConstraints maxHeight="396.0" minHeight="0.0" prefHeight="278.0" vgrow="SOMETIMES" />
+		<RowConstraints maxHeight="646.0" minHeight="10.0" prefHeight="235.0" vgrow="SOMETIMES" />
+		<RowConstraints maxHeight="584.0" minHeight="10.0" prefHeight="226.0" vgrow="SOMETIMES" />
+	</rowConstraints>
+</GridPane>

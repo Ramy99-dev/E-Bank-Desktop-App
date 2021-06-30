@@ -1,0 +1,15 @@
+#btnCompte , #btnClient{
+	-fx-background-color:green;
+	
+}
+
+#connectBtn{
+	-fx-background-color:red;
+	
+}
+
+#deconnectBtn{
+		-fx-background-color:red;
+}
+
+
